@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu Feb 01 13:12:49 EST 2018
+0.baseType=DIRECTORY
+0.base=/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/build/intermediates/assets/debug
+0.path=Rosario-Regular.ttf
+0.set=ASSET
+count=1

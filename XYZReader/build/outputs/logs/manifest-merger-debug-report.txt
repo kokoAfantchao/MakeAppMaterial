@@ -1,0 +1,210 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:1:1-48:12
+INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:1:1-48:12
+INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:1:1-48:12
+MERGED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-v4:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/d21cb8804b827033f5d466db4f49b235/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:palette-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/palette-v7-25.3.0.aar/156ffb43cb5571d66af198559a781f4c/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.0.aar/6fd61ffe9eb7b836032e670e7e25bbbf/AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:cardview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.0.aar/512636e350195bbb6c3e83f53424ba16/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-fragment:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.0.aar/e42d1dc65e9d2d28e85199e93377fdea/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.0.aar/d8c053fb16a0624905dd4c3b2e76b65a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.0.aar/cc267cd65eaab9c17d2571b4c8a15638/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.0.aar/fdb03b967be203ae827c6bfa47315fa8/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.0.aar/d707e6f58b0fdd9d4ccbdbea163cd29c/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.0.aar/0e5206dba9019fdf25498b57a86705e1/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/05f8b589ce39469675805464ed0be3c9/AndroidManifest.xml:17:1-31:12
+INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:1:1-48:12
+INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:1:1-48:12
+	package
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:2:5-36
+	android:versionName
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:4:5-30
+		INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
+		INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:3:5-28
+		INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
+		INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:8:5-75
+	android:name
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:8:22-72
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:9:22-76
+application
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:11:5-46:19
+MERGED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/d21cb8804b827033f5d466db4f49b235/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/d21cb8804b827033f5d466db4f49b235/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:palette-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/palette-v7-25.3.0.aar/156ffb43cb5571d66af198559a781f4c/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:palette-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/palette-v7-25.3.0.aar/156ffb43cb5571d66af198559a781f4c/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.0.aar/512636e350195bbb6c3e83f53424ba16/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.0.aar/512636e350195bbb6c3e83f53424ba16/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-fragment:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.0.aar/e42d1dc65e9d2d28e85199e93377fdea/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.0.aar/e42d1dc65e9d2d28e85199e93377fdea/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.0.aar/d8c053fb16a0624905dd4c3b2e76b65a/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.0.aar/d8c053fb16a0624905dd4c3b2e76b65a/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.0.aar/cc267cd65eaab9c17d2571b4c8a15638/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.0.aar/cc267cd65eaab9c17d2571b4c8a15638/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.0.aar/fdb03b967be203ae827c6bfa47315fa8/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.0.aar/fdb03b967be203ae827c6bfa47315fa8/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.0.aar/d707e6f58b0fdd9d4ccbdbea163cd29c/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.0.aar/d707e6f58b0fdd9d4ccbdbea163cd29c/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.0.aar/0e5206dba9019fdf25498b57a86705e1/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.0.aar/0e5206dba9019fdf25498b57a86705e1/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/05f8b589ce39469675805464ed0be3c9/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/05f8b589ce39469675805464ed0be3c9/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:14:9-41
+	android:icon
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:15:9-43
+activity#com.example.xyzreader.ui.ArticleListActivity
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:17:9-24:20
+	android:label
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:19:13-45
+	android:name
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:18:13-51
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:20:13-23:29
+action#android.intent.action.MAIN
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:22:27-74
+activity#com.example.xyzreader.ui.ArticleDetailActivity
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:26:9-37:20
+	android:parentActivityName
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:28:13-65
+	android:name
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:27:13-53
+intent-filter#android.intent.action.VIEW+android.intent.category.DEFAULT
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:29:13-33:29
+action#android.intent.action.VIEW
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:30:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:31:17-76
+	android:name
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:31:27-73
+data
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:32:17-100
+	android:mimeType
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:32:23-97
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:34:13-36:59
+	android:value
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:36:17-56
+	android:name
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:35:17-63
+service#com.example.xyzreader.data.UpdaterService
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:39:9-40:40
+	android:exported
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:40:13-37
+	android:name
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:39:18-53
+provider#com.example.xyzreader.data.ItemsProvider
+ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:42:9-44:40
+	android:authorities
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:43:13-56
+	android:exported
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:44:13-37
+	android:name
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:42:19-53
+uses-sdk
+INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
+INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
+MERGED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:appcompat-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/d21cb8804b827033f5d466db4f49b235/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/d21cb8804b827033f5d466db4f49b235/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:palette-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/palette-v7-25.3.0.aar/156ffb43cb5571d66af198559a781f4c/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/palette-v7-25.3.0.aar/156ffb43cb5571d66af198559a781f4c/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.0.aar/6fd61ffe9eb7b836032e670e7e25bbbf/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.0.aar/6fd61ffe9eb7b836032e670e7e25bbbf/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.0.aar/512636e350195bbb6c3e83f53424ba16/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.0.aar/512636e350195bbb6c3e83f53424ba16/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.0.aar/e42d1dc65e9d2d28e85199e93377fdea/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.0.aar/e42d1dc65e9d2d28e85199e93377fdea/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.0.aar/d8c053fb16a0624905dd4c3b2e76b65a/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.0.aar/d8c053fb16a0624905dd4c3b2e76b65a/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.0.aar/cc267cd65eaab9c17d2571b4c8a15638/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.0.aar/cc267cd65eaab9c17d2571b4c8a15638/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.0.aar/fdb03b967be203ae827c6bfa47315fa8/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.0.aar/fdb03b967be203ae827c6bfa47315fa8/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.0.aar/d707e6f58b0fdd9d4ccbdbea163cd29c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.0.aar/d707e6f58b0fdd9d4ccbdbea163cd29c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.0.aar/0e5206dba9019fdf25498b57a86705e1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.0.aar/0e5206dba9019fdf25498b57a86705e1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/05f8b589ce39469675805464ed0be3c9/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/05f8b589ce39469675805464ed0be3c9/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
+INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:23:9-52
+	android:targetSdkVersion
+		INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
+		INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
+		ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
+		INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/d21cb8804b827033f5d466db4f49b235/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/d21cb8804b827033f5d466db4f49b235/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:palette-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/palette-v7-25.3.0.aar/156ffb43cb5571d66af198559a781f4c/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:palette-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/palette-v7-25.3.0.aar/156ffb43cb5571d66af198559a781f4c/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.0.aar/6fd61ffe9eb7b836032e670e7e25bbbf/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.0.aar/6fd61ffe9eb7b836032e670e7e25bbbf/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.0.aar/512636e350195bbb6c3e83f53424ba16/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.0.aar/512636e350195bbb6c3e83f53424ba16/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-fragment:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.0.aar/e42d1dc65e9d2d28e85199e93377fdea/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.0.aar/e42d1dc65e9d2d28e85199e93377fdea/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.0.aar/d8c053fb16a0624905dd4c3b2e76b65a/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.0.aar/d8c053fb16a0624905dd4c3b2e76b65a/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.0.aar/cc267cd65eaab9c17d2571b4c8a15638/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.0.aar/cc267cd65eaab9c17d2571b4c8a15638/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.0.aar/fdb03b967be203ae827c6bfa47315fa8/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.0.aar/fdb03b967be203ae827c6bfa47315fa8/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.0.aar/d707e6f58b0fdd9d4ccbdbea163cd29c/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.0.aar/d707e6f58b0fdd9d4ccbdbea163cd29c/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.0.aar/0e5206dba9019fdf25498b57a86705e1/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.0.aar/0e5206dba9019fdf25498b57a86705e1/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/05f8b589ce39469675805464ed0be3c9/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/05f8b589ce39469675805464ed0be3c9/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:26:9-47

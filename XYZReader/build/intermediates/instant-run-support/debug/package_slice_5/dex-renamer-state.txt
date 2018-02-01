@@ -1,0 +1,4 @@
+#Thu Feb 01 13:13:16 EST 2018
+base.0=/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/build/intermediates/transforms/dexMerger/debug/5
+path.0=classes.dex
+renamed.0=classes.dex
