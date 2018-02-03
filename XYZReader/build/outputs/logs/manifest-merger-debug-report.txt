@@ -4,11 +4,14 @@ ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/
 INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:1:1-48:12
 INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:1:1-48:12
 MERGED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:design:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/design-25.3.0.aar/8c4e489792528107398180a1be6e948b/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:transition:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/transition-25.3.0.aar/f6ed80563bf1dd0b86e244b782fba701/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/d21cb8804b827033f5d466db4f49b235/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:palette-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/palette-v7-25.3.0.aar/156ffb43cb5571d66af198559a781f4c/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:recyclerview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.0.aar/6fd61ffe9eb7b836032e670e7e25bbbf/AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.support:cardview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.0.aar/512636e350195bbb6c3e83f53424ba16/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/8a54b49bfc0a4b65c837c9a4b43398ec/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.0.aar/e42d1dc65e9d2d28e85199e93377fdea/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-media-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.0.aar/d8c053fb16a0624905dd4c3b2e76b65a/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.0.aar/cc267cd65eaab9c17d2571b4c8a15638/AndroidManifest.xml:17:1-31:12
@@ -50,14 +53,20 @@ application
 ADDED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml:11:5-46:19
 MERGED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/design-25.3.0.aar/8c4e489792528107398180a1be6e948b/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/design-25.3.0.aar/8c4e489792528107398180a1be6e948b/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/transition-25.3.0.aar/f6ed80563bf1dd0b86e244b782fba701/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/transition-25.3.0.aar/f6ed80563bf1dd0b86e244b782fba701/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-v4:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/d21cb8804b827033f5d466db4f49b235/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/d21cb8804b827033f5d466db4f49b235/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:palette-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/palette-v7-25.3.0.aar/156ffb43cb5571d66af198559a781f4c/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:palette-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/palette-v7-25.3.0.aar/156ffb43cb5571d66af198559a781f4c/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:cardview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.0.aar/512636e350195bbb6c3e83f53424ba16/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:cardview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.0.aar/512636e350195bbb6c3e83f53424ba16/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/8a54b49bfc0a4b65c837c9a4b43398ec/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/8a54b49bfc0a4b65c837c9a4b43398ec/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-fragment:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.0.aar/e42d1dc65e9d2d28e85199e93377fdea/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.0.aar/e42d1dc65e9d2d28e85199e93377fdea/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.0.aar/d8c053fb16a0624905dd4c3b2e76b65a/AndroidManifest.xml:29:5-20
@@ -142,8 +151,12 @@ INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/ma
 INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
 MERGED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:21:5-23:55
 MERGED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:design:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/design-25.3.0.aar/8c4e489792528107398180a1be6e948b/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/design-25.3.0.aar/8c4e489792528107398180a1be6e948b/AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:transition:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/transition-25.3.0.aar/f6ed80563bf1dd0b86e244b782fba701/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/transition-25.3.0.aar/f6ed80563bf1dd0b86e244b782fba701/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/d21cb8804b827033f5d466db4f49b235/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/d21cb8804b827033f5d466db4f49b235/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:palette-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/palette-v7-25.3.0.aar/156ffb43cb5571d66af198559a781f4c/AndroidManifest.xml:20:5-43
@@ -152,6 +165,8 @@ MERGED from [com.android.support:recyclerview-v7:25.3.0] /Users/nestorkokoafantc
 MERGED from [com.android.support:recyclerview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.0.aar/6fd61ffe9eb7b836032e670e7e25bbbf/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:cardview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.0.aar/512636e350195bbb6c3e83f53424ba16/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:cardview-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.0.aar/512636e350195bbb6c3e83f53424ba16/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/8a54b49bfc0a4b65c837c9a4b43398ec/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/8a54b49bfc0a4b65c837c9a4b43398ec/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-fragment:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.0.aar/e42d1dc65e9d2d28e85199e93377fdea/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-fragment:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.0.aar/e42d1dc65e9d2d28e85199e93377fdea/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.0.aar/d8c053fb16a0624905dd4c3b2e76b65a/AndroidManifest.xml:21:5-23:63
@@ -180,8 +195,12 @@ INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/ma
 		INJECTED from /Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:support-v13:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.0.aar/d5f2ecbddcca15ac0343556275a18b3a/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:design:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/design-25.3.0.aar/8c4e489792528107398180a1be6e948b/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:design:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/design-25.3.0.aar/8c4e489792528107398180a1be6e948b/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:appcompat-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:appcompat-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/transition-25.3.0.aar/f6ed80563bf1dd0b86e244b782fba701/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/transition-25.3.0.aar/f6ed80563bf1dd0b86e244b782fba701/AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-v4:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/d21cb8804b827033f5d466db4f49b235/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-v4:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/d21cb8804b827033f5d466db4f49b235/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:palette-v7:25.3.0] /Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/palette-v7-25.3.0.aar/156ffb43cb5571d66af198559a781f4c/AndroidManifest.xml:22:5-24:34

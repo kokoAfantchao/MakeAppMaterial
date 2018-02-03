@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Feb 01 13:13:17 EST 2018
+#Thu Feb 01 14:57:09 EST 2018
 2.base=/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/build/intermediates/transforms/dexMerger/debug/11
 5.set=DEX
 0.path=classes.dex
