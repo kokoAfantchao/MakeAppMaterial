@@ -39,14 +39,17 @@
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:ellipsize="end"
-            android:maxLines="5"
-            android:textColor="#6000"
+            android:maxLines="4"
+            android:textColor="@color/secondary_text"
             android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/article_author"
             app:layout_constraintEnd_toStartOf="@+id/thumbnail"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/article_title"
+            app:layout_constraintVertical_bias="0.0"
             tools:text="This is good book to learn kotlin" />
 
 
@@ -77,8 +80,8 @@
 
         <TextView
             android:id="@+id/article_date"
-            android:layout_width="59dp"
-            android:layout_height="19dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:layout_constraintBaseline_toBaselineOf="@+id/article_author"
             app:layout_constraintEnd_toEndOf="@+id/thumbnail"
             tools:text="Jun 2017" />

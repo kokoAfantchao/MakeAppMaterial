@@ -176,11 +176,17 @@ public class ArticleListActivity extends AppCompatActivity implements
                                 DateUtils.FORMAT_ABBREV_ALL).toString()));
 //                                + "<br/>" + " by "
 //                                + mCursor.getString(ArticleLoader.Query.AUTHOR)));
+                Log.d(TAG," time is not "+
+                        DateUtils.getRelativeTimeSpanString(
+                                publishedDate.getTime(),
+                                System.currentTimeMillis(), DateUtils.HOUR_IN_MILLIS,
+                                DateUtils.FORMAT_ABBREV_ALL).toString());
             } else {
                 holder.dateView.setText(Html.fromHtml(
                         outputFormat.format(publishedDate)));
 //                        + "<br/>" + " by "
 //                        + mCursor.getString(ArticleLoader.Query.AUTHOR)))
+                Log.d(TAG," time is  "+ outputFormat.format(publishedDate));
 
             }
             holder.thumbnailView.setImageUrl(
@@ -189,7 +195,7 @@ public class ArticleListActivity extends AppCompatActivity implements
 
             holder.thumbnailView.setAspectRatio(mCursor.getFloat(ArticleLoader.Query.ASPECT_RATIO));
             holder.authorView.setText(mCursor.getString(ArticleLoader.Query.AUTHOR));
-            holder.subtitleView.setText(mCursor.getString(ArticleLoader.Query.BODY));
+            holder.subtitleView.setText(Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY)));
         }
         @Override
         public int getItemCount() {

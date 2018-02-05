@@ -5,32 +5,36 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.0.1"
-    timestamp="1517644173651"
+    timestamp="1517756101252"
     token="3845758077717172605"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="259" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="40" />
     <task
         name="verifier"
-        duration="0" />
+        duration="2" />
 
     <artifact
-        location="/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/build/outputs/apk/debug/XYZReader-debug.apk"
-        type="SPLIT_MAIN" />
+        location="/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1517641582069"
+        timestamp="1517756047637"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/build/outputs/apk/debug/XYZReader-debug.apk"
             type="SPLIT_MAIN" />
@@ -59,9 +63,6 @@
             location="/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
@@ -70,19 +71,12 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1517643866362"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1517756101252"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1517644173651"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/build/outputs/apk/debug/XYZReader-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

@@ -53,7 +53,6 @@ public class ArticleDetailFragment extends Fragment implements
     private ObservableScrollView mScrollView;
     private DrawInsetsFrameLayout mDrawInsetsFrameLayout;
     private ColorDrawable mStatusBarColorDrawable;
-
     private int mTopInset;
     private View mPhotoContainerView;
     private ImageView mPhotoView;
