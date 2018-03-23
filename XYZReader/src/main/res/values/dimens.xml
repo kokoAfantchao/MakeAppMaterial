@@ -1,11 +1,37 @@
 <resources>
+    <!--Standard spacing size-->
+    <dimen name="spacing_micro">4dp</dimen>
+    <dimen name="spacing_normal">8dp</dimen>
+    <dimen name="spacing_large">32dp</dimen>
+    <dimen name="spacing_xlarge">48dp</dimen>
+    <dimen name="spacing_huge">64dp</dimen>
+
+    <!--Standard Text size -->
+    <dimen name="text_size_micro">16sp</dimen>
+    <dimen name="text_size_normal">24sp</dimen>
+    <dimen name="text_size_large">32sp</dimen>
+    <dimen name="text_size_xlarge">48sp</dimen>
+
+
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+
     <!-- detail -->
     <dimen name="detail_title_text_size">32sp</dimen>
     <dimen name="detail_body_text_size">22sp</dimen>
-    <item name="detail_body_line_spacing_multiplier" format="float" type="fraction">1.25</item>
-
     <dimen name="fab_elevation">2dp</dimen>
     <dimen name="fab_press_translation_z">6dp</dimen>
     <dimen name="fab_margin">24dp</dimen>
+    <item name="detail_body_line_spacing_multiplier" format="float" type="fraction">1.25</item>
+
+
+    <!--List item article  -->
+    <dimen name="thumbnail_size">100dp</dimen>
+
+
+    <!--Text size -->
+
+
+
 
 </resources>

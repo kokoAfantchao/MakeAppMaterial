@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk-rKZ/values-kk-rKZ.xml",
+            "outputFile": "/Users/nestor/Documents/GitHub/MakeAppMaterial/XYZReader/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk-rKZ/values-kk-rKZ.xml",
             "map": [
                 {
-                    "source": "/Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/res/values-kk-rKZ/values-kk-rKZ.xml",
+                    "source": "/Users/nestor/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/ab05a0f14f25c723afad7342ef68e5b8/res/values-kk-rKZ/values-kk-rKZ.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

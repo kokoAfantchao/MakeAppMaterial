@@ -12,7 +12,8 @@ import android.os.RemoteException;
 import android.text.format.Time;
 import android.util.Log;
 
-import com.example.xyzreader.remote.RemoteEndpointUtil;
+import com.example.xyzreader.data.source.local.ItemsContract;
+import com.example.xyzreader.data.source.remote.RemoteEndpointUtil;
 
 import org.json.JSONArray;
 import org.json.JSONException;

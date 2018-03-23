@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Users/nestor/Documents/GitHub/MakeAppMaterial/XYZReader/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/nestorkokoafantchao/GitHub/MakeAppMaterial/XYZReader/src/main/res/values-land/macro_layout.xml",
+                    "source": "/Users/nestor/Documents/GitHub/MakeAppMaterial/XYZReader/src/main/res/values-land/dimens.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "87",
+                        "endColumns": "46",
+                        "endOffsets": "129"
+                    },
+                    "to": {
+                        "startLines": "8",
+                        "startColumns": "4",
+                        "startOffsets": "438",
+                        "endColumns": "46",
+                        "endOffsets": "480"
+                    }
+                },
+                {
+                    "source": "/Users/nestor/Documents/GitHub/MakeAppMaterial/XYZReader/src/main/res/values-land/macro_layout.xml",
                     "from": {
                         "startLines": "3,2",
                         "startColumns": "4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/803134b9ccb22c5752712d5a8ac97408/res/values-land/values-land.xml",
+                    "source": "/Users/nestor/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/ab05a0f14f25c723afad7342ef68e5b8/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -31,7 +48,7 @@
                     }
                 },
                 {
-                    "source": "/Users/nestorkokoafantchao/.gradle/caches/transforms-1/files-1.1/design-25.3.0.aar/8c4e489792528107398180a1be6e948b/res/values-land/values-land.xml",
+                    "source": "/Users/nestor/.gradle/caches/transforms-1/files-1.1/design-25.3.0.aar/d9accd11319c088bfc7b2ce034376f37/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -41,12 +58,12 @@
                         "endOffsets": "232"
                     },
                     "to": {
-                        "startLines": "8",
+                        "startLines": "9",
                         "startColumns": "4",
-                        "startOffsets": "438",
-                        "endLines": "11",
+                        "startOffsets": "485",
+                        "endLines": "12",
                         "endColumns": "12",
-                        "endOffsets": "615"
+                        "endOffsets": "662"
                     }
                 }
             ]
