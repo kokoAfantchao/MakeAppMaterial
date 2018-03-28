@@ -60,7 +60,7 @@ public class AppExecutors {
         return networkIO;
     }
 
-    public Executor mainThread(){
+    public Executor mainThread() {
         return mainThread;
     }
 

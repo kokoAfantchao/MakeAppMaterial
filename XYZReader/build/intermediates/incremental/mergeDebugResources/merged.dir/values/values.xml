@@ -638,6 +638,7 @@
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
     <dimen name="list_side_margin">4dp</dimen>
     <dimen name="list_toolbar_side_margin">0dp</dimen>
+    <dimen name="logo_side_margin">20dp</dimen>
     <dimen name="notification_action_icon_size">32dp</dimen>
     <dimen name="notification_action_text_size">13sp</dimen>
     <dimen name="notification_big_circle_margin">12dp</dimen>
@@ -665,6 +666,7 @@
     <dimen name="text_size_normal">24sp</dimen>
     <dimen name="text_size_xlarge">48sp</dimen>
     <dimen name="thumbnail_size">100dp</dimen>
+    <dimen name="toolbar_size">100dp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
     <item format="float" name="detail_body_line_spacing_multiplier" type="fraction">1.25</item>
@@ -2086,6 +2088,7 @@
         <item name="windowNoTitle">true</item>
     </style>
     <style name="Theme.Article" parent="App.Base.Theme">
+        <item name="windowActionBarOverlay">true</item>
 
     </style>
     <style name="Theme.Article.Detail" parent="@style/Theme.Article">

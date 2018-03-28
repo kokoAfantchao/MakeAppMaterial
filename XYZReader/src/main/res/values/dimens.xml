@@ -27,11 +27,11 @@
 
     <!--List item article  -->
     <dimen name="thumbnail_size">100dp</dimen>
+    <dimen name="toolbar_size">100dp</dimen>
+    <dimen name="logo_side_margin">20dp</dimen>
 
 
     <!--Text size -->
-
-
 
 
 </resources>

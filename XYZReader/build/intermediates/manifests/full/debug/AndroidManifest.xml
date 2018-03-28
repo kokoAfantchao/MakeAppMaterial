@@ -25,7 +25,7 @@
         android:theme="@style/App.Base.Theme" >
         <activity
             android:name="com.example.xyzreader.ui.article.ArticleListActivity"
-            android:label="@string/app_name"
+            android:label=""
             android:launchMode="singleTask"
             android:theme="@style/Theme.Article" >
             <intent-filter>

@@ -1,14 +1,10 @@
 package com.example.xyzreader.ui.article;
 
-import android.annotation.TargetApi;
 import android.app.ActivityOptions;
-import android.app.LoaderManager;
-import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.database.Cursor;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -20,39 +16,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.text.Html;
-import android.text.format.DateUtils;
-import android.transition.Slide;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.example.xyzreader.R;
-
 import com.example.xyzreader.adapters.ArticleAdapter;
 import com.example.xyzreader.data.Article;
-import com.example.xyzreader.data.ArticleLoader;
 import com.example.xyzreader.data.UpdaterService;
 import com.example.xyzreader.data.source.ArticlesRepository;
 import com.example.xyzreader.data.source.local.ArticleLocalDataSoure;
 import com.example.xyzreader.data.source.remote.ArticleRemoteDataSource;
 import com.example.xyzreader.ui.articledetail.ArticleDetailActivity;
-import com.example.xyzreader.ui.customviews.DynamicHeightNetworkImageView;
 import com.example.xyzreader.utils.AppExecutors;
-import com.squareup.picasso.Picasso;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import timber.log.Timber;
 
 /**
  * An activity representing a list of Articles. This activity has different presentations for
@@ -63,22 +45,50 @@ import timber.log.Timber;
 public class ArticleListActivity extends AppCompatActivity implements ArticleContract.View {
 
     private static final String TAG = ArticleListActivity.class.toString();
-    private static final String BUNDLE_ARTICLE ="BUNDLE_ARTICLE" ;
-    @BindView(R.id.toolbar) Toolbar mToolbar;
-    @BindView(R.id.swipe_refresh_layout)  SwipeRefreshLayout mSwipeRefreshLayout;
-    @BindView(R.id.recycler_view)  RecyclerView mRecyclerView;
+    private static final String BUNDLE_ARTICLE = "BUNDLE_ARTICLE";
+    public static List<Article> mArticleList = new ArrayList<>();
+    @BindView(R.id.toolbar)
+    Toolbar mToolbar;
+    @BindView(R.id.swipe_refresh_layout)
+    SwipeRefreshLayout mSwipeRefreshLayout;
+    @BindView(R.id.recycler_view)
+    RecyclerView mRecyclerView;
+    ArticleAdapter.ArticleItemListener mArticleItemListener = new ArticleAdapter.ArticleItemListener() {
+        @Override
+        public void onArticleClick(@NonNull int position, @NonNull ImageView imageView) {
+
+            Intent intentDetailActivity = new Intent(getApplicationContext(), ArticleDetailActivity.class);
+            intentDetailActivity.putExtra(ArticleDetailActivity.EXTRA_ARTICLES_ID, position);
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                startWithTransition(intentDetailActivity, imageView);
+            } else {
+                startActivity(intentDetailActivity);
+            }
+        }
+
+    };
     private ArticleAdapter mArticleAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private boolean isAppVisible = false;
     private ArticlePresenter mArticlePresenter;
-    public static   List<Article> mArticleList = new ArrayList<>();
-
+    private boolean mIsRefreshing = false;
+    private BroadcastReceiver mRefreshingReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (UpdaterService.BROADCAST_ACTION_STATE_CHANGE.equals(intent.getAction())) {
+                mIsRefreshing = intent.getBooleanExtra(UpdaterService.EXTRA_REFRESHING, false);
+                updateRefreshingUI();
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
         ButterKnife.bind(this);
+        setSupportActionBar(mToolbar);
         initRecycleView();
         //Creating presenter  this can be improve with dagger(injection)
         mArticlePresenter = new ArticlePresenter(
@@ -90,12 +100,12 @@ public class ArticleListActivity extends AppCompatActivity implements ArticleCon
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-               mArticlePresenter.loadArticle(true);
+                mArticlePresenter.loadArticle(true);
             }
         });
         if (savedInstanceState == null) {
             mArticlePresenter.start();
-        }else {
+        } else {
             ArrayList<Article> parcelableArrayList = savedInstanceState
                     .getParcelableArrayList(BUNDLE_ARTICLE);
             mArticleAdapter.swapArticlesData(parcelableArrayList);
@@ -109,7 +119,6 @@ public class ArticleListActivity extends AppCompatActivity implements ArticleCon
 
     }
 
-
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -117,7 +126,7 @@ public class ArticleListActivity extends AppCompatActivity implements ArticleCon
     }
 
     //Set adapter and layoutManager to Recycleview
-    private void initRecycleView(){
+    private void initRecycleView() {
         mArticleAdapter = new ArticleAdapter(mArticleItemListener);
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
@@ -134,64 +143,30 @@ public class ArticleListActivity extends AppCompatActivity implements ArticleCon
     @Override
     protected void onResume() {
         super.onResume();
-        isAppVisible=true;
+        isAppVisible = true;
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        isAppVisible=false ;
+        isAppVisible = false;
         unregisterReceiver(mRefreshingReceiver);
     }
 
-
-    private boolean mIsRefreshing = false;
-
-
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private void startWithTransition(Intent intent, View view){
+    private void startWithTransition(Intent intent, View view) {
         Bundle bundle = ActivityOptions.makeSceneTransitionAnimation(this,
                 view,
                 ViewCompat.getTransitionName(view)).toBundle();
-        startActivity(intent,bundle);
+        startActivity(intent, bundle);
 
     }
-
-        ArticleAdapter.ArticleItemListener mArticleItemListener = new ArticleAdapter.ArticleItemListener() {
-            @Override
-            public void onArticleClick(@NonNull int position, @NonNull ImageView imageView) {
-
-                Intent intentDetailActivity = new Intent(getApplicationContext(), ArticleDetailActivity.class);
-                intentDetailActivity.putExtra(ArticleDetailActivity.EXTRA_ARTICLES_ID, position);
-
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    startWithTransition(intentDetailActivity,imageView);
-                }
-                else {
-                    startActivity(intentDetailActivity);
-                }
-            }
-
-    };
-
-
-
-    private BroadcastReceiver mRefreshingReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if (UpdaterService.BROADCAST_ACTION_STATE_CHANGE.equals(intent.getAction())) {
-                mIsRefreshing = intent.getBooleanExtra(UpdaterService.EXTRA_REFRESHING, false);
-                updateRefreshingUI();
-            }
-        }
-    };
 
     private void updateRefreshingUI() {
 //        mSwipeRefreshLayout.setRefreshing(
 //                mIsRefreshing
 //        );
     }
-
 
 
     @Override
@@ -206,7 +181,7 @@ public class ArticleListActivity extends AppCompatActivity implements ArticleCon
 
     @Override
     public void showArticle(List<Article> articles) {
-       Log.d("ShowArticle", articles.toString());
+        Log.d("ShowArticle", articles.toString());
         mArticleList = articles;
         mArticleAdapter.swapArticlesData(articles);
         setLoadingIndicator(false);
@@ -232,7 +207,6 @@ public class ArticleListActivity extends AppCompatActivity implements ArticleCon
 
         return isAppVisible;
     }
-
 
 
 }

@@ -4,7 +4,7 @@
             "outputFile": "/Users/nestor/Documents/GitHub/MakeAppMaterial/XYZReader/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/Users/nestor/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/ab05a0f14f25c723afad7342ef68e5b8/res/values-v17/values-v17.xml",
+                    "source": "/Users/nestor/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/3af4dc5f1eb6a7c280b7b73748427047/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

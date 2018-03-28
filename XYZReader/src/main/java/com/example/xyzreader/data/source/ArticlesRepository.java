@@ -18,17 +18,18 @@ package com.example.xyzreader.data.source;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
+
 import com.example.xyzreader.data.Article;
 import com.example.xyzreader.data.source.local.ArticleLocalDataSoure;
 import com.example.xyzreader.data.source.remote.ArticleRemoteDataSource;
 
-import static com.google.common.base.Preconditions.checkNotNull;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import static com.google.common.base.Preconditions.checkNotNull;
 
 
 /**
@@ -49,7 +50,7 @@ public class ArticlesRepository implements ArticlesDataSource {
     /**
      * This variable has package local visibility so it can be accessed from tests.
      */
-     Map<String, Article> mCachedArticles;
+    Map<String, Article> mCachedArticles;
 
     /**
      * Marks the cache as invalid, to force an update the next time data is requested. This variable
@@ -72,7 +73,7 @@ public class ArticlesRepository implements ArticlesDataSource {
      * @return the {@link ArticlesRepository} instance
      */
     public static ArticlesRepository getInstance(ArticleRemoteDataSource ArticlesRemoteDataSource,
-                                              ArticleLocalDataSoure ArticlesLocalDataSource) {
+                                                 ArticleLocalDataSoure ArticlesLocalDataSource) {
         if (INSTANCE == null) {
             INSTANCE = new ArticlesRepository(ArticlesRemoteDataSource, ArticlesLocalDataSource);
         }
@@ -107,21 +108,21 @@ public class ArticlesRepository implements ArticlesDataSource {
         if (mCacheIsDirty) {
             // If the cache is dirty we need to fetch new data from the network.
             getArticlesFromRemoteDataSource(callback);
-        } else{
+        } else {
             // Query the local storage if available. If not, query the network.
-           mArticlesLocalDataSource.getArticles(callback);
-//            mArticlesLocalDataSource.getArticles(new LoadArticlesCallback() {
-//                @Override
-//                public void onArticlesLoaded(List<Article> Articles) {
-//                    refreshCache(Articles);
-//                    callback.onArticlesLoaded(new ArrayList<>(mCachedArticles.values()));
-//                }
-//
-//                @Override
-//                public void onDataNotAvailable() {
-//                    getArticlesFromRemoteDataSource(callback);
-//                }
-//            });
+          /* mArticlesLocalDataSource.getArticles(callback);*/
+            mArticlesLocalDataSource.getArticles(new LoadArticlesCallback() {
+                @Override
+                public void onArticlesLoaded(List<Article> Articles) {
+                    refreshCache(Articles);
+                    callback.onArticlesLoaded(new ArrayList<>(mCachedArticles.values()));
+                }
+
+                @Override
+                public void onDataNotAvailable() {
+                    getArticlesFromRemoteDataSource(callback);
+                }
+            });
         }
     }
 
@@ -140,6 +141,7 @@ public class ArticlesRepository implements ArticlesDataSource {
 
     @Override
     public void saveArticle(@NonNull List<Article> articles) {
+        mArticlesLocalDataSource.saveArticle(articles);
 
     }
 
@@ -156,6 +158,7 @@ public class ArticlesRepository implements ArticlesDataSource {
         checkNotNull(ArticleId);
         checkNotNull(callback);
 
+
         Article cachedArticle = getArticleWithId(ArticleId);
 
         // Respond immediately with cache if available
@@ -163,6 +166,7 @@ public class ArticlesRepository implements ArticlesDataSource {
             callback.onArticleLoaded(cachedArticle);
             return;
         }
+
 
         // Load from server/persisted if needed.
 
@@ -174,7 +178,6 @@ public class ArticlesRepository implements ArticlesDataSource {
                 if (mCachedArticles == null) {
                     mCachedArticles = new LinkedHashMap<>();
                 }
-                mCachedArticles.put(Article.get_ID(), Article);
                 callback.onArticleLoaded(Article);
             }
 
@@ -200,6 +203,27 @@ public class ArticlesRepository implements ArticlesDataSource {
         });
     }
 
+
+    public void getArticleWithFullContent(@NonNull final String ArticleId, @NonNull final GetArticleCallback callback) {
+        checkNotNull(ArticleId);
+        checkNotNull(callback);
+        // loadArticle from Datebase to have the full body
+
+        mArticlesLocalDataSource.getArticle(ArticleId, new GetArticleCallback() {
+            @Override
+            public void onArticleLoaded(Article Article) {
+                Log.d("OnArticle Load ", Article.toString());
+                callback.onArticleLoaded(Article);
+            }
+
+            @Override
+            public void onDataNotAvailable() {
+
+            }
+        });
+
+    }
+
     @Override
     public void refreshArticles() {
         mCacheIsDirty = true;
@@ -207,7 +231,7 @@ public class ArticlesRepository implements ArticlesDataSource {
 
     @Override
     public void deleteAllArticles() {
-        mArticlesRemoteDataSource.deleteAllArticles();
+        //mArticlesRemoteDataSource.deleteAllArticles();
         mArticlesLocalDataSource.deleteAllArticles();
 
         if (mCachedArticles == null) {
@@ -228,13 +252,13 @@ public class ArticlesRepository implements ArticlesDataSource {
         mArticlesRemoteDataSource.getArticles(new LoadArticlesCallback() {
             @Override
             public void onArticlesLoaded(List<Article> Articles) {
-                refreshCache(Articles);
                 refreshLocalDataSource(Articles);
+                refreshCache(Articles);
                 callback.onArticlesLoaded(new ArrayList<>(mCachedArticles.values()));
             }
 
             @Override
-            public void onDataNotAvailable(){
+            public void onDataNotAvailable() {
                 callback.onDataNotAvailable();
             }
         });
@@ -245,8 +269,8 @@ public class ArticlesRepository implements ArticlesDataSource {
             mCachedArticles = new LinkedHashMap<>();
         }
         mCachedArticles.clear();
+
         for (Article article : Articles) {
-            article.reduceBodyLength();
             mCachedArticles.put(article.get_ID(), article);
         }
         mCacheIsDirty = false;

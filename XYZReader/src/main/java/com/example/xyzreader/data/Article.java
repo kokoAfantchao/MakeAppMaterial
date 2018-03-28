@@ -1,11 +1,9 @@
 package com.example.xyzreader.data;
 
 import android.content.ContentValues;
-import android.os.Debug;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.support.annotation.NonNull;
-import android.util.Log;
 
 import com.example.xyzreader.data.source.local.ItemsContract;
 import com.google.gson.annotations.SerializedName;
@@ -14,37 +12,40 @@ import com.google.gson.annotations.SerializedName;
  * Created by nestor on 2/27/18.
  */
 
-public class Article implements Parcelable{
+public class Article implements Parcelable {
+    public static final Creator<Article> CREATOR = new Creator<Article>() {
+        @Override
+        public Article createFromParcel(Parcel in) {
+            return new Article(in);
+        }
+
+        @Override
+        public Article[] newArray(int size) {
+            return new Article[size];
+        }
+    };
     @SerializedName("id")
-    private String _ID ;
-
-    private String SERVER_ID ;
-
+    private String _ID;
+    private String SERVER_ID;
     @SerializedName("title")
-    private String TITLE ;
-
+    private String TITLE;
     @SerializedName("author")
-    private String AUTHOR ;
-
+    private String AUTHOR;
     @SerializedName("body")
-    private String BODY ;
-
+    private String BODY;
     @SerializedName("thumb")
     private String THUMB_URL;
-
     @SerializedName("photo")
-    private String PHOTO_URL ;
-
+    private String PHOTO_URL;
     @SerializedName("aspect_ratio")
     private String ASPECT_RATIO;
-
     @SerializedName("published_date")
-    private String PUBLISHED_DATE ;
+    private String PUBLISHED_DATE;
 
-
-    public Article(){
+    public Article() {
 
     }
+
     protected Article(Parcel in) {
         _ID = in.readString();
         SERVER_ID = in.readString();
@@ -57,17 +58,11 @@ public class Article implements Parcelable{
         PUBLISHED_DATE = in.readString();
     }
 
-    public static final Creator<Article> CREATOR = new Creator<Article>() {
-        @Override
-        public Article createFromParcel(Parcel in) {
-            return new Article(in);
-        }
+    public static Article valueOf(@NonNull ContentValues contentValues) {
 
-        @Override
-        public Article[] newArray(int size) {
-            return new Article[size];
-        }
-    };
+
+        return null;
+    }
 
     public String get_ID() {
         return _ID;
@@ -141,23 +136,20 @@ public class Article implements Parcelable{
         this.PUBLISHED_DATE = PUBLISHED_DATE;
     }
 
-    public   ContentValues getContentValue(){
-        ContentValues contentValues  = new ContentValues();
-        contentValues.put(ItemsContract.Items.TITLE,this.TITLE);
-        contentValues.put(ItemsContract.Items.PUBLISHED_DATE,this.PUBLISHED_DATE);
-        contentValues.put(ItemsContract.Items.AUTHOR,this.AUTHOR);
-        contentValues.put(ItemsContract.Items.THUMB_URL,this.THUMB_URL);
-         contentValues.put(ItemsContract.Items.PHOTO_URL,this.PHOTO_URL);
-        contentValues.put(ItemsContract.Items.ASPECT_RATIO,this.ASPECT_RATIO);
-        contentValues.put(ItemsContract.Items.BODY,this.BODY);
-        return  contentValues;
-    }
-    public static Article valueOf(@NonNull ContentValues contentValues){
-        return null ;
+    public ContentValues getContentValue() {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(ItemsContract.Items.TITLE, this.TITLE);
+        contentValues.put(ItemsContract.Items.PUBLISHED_DATE, this.PUBLISHED_DATE);
+        contentValues.put(ItemsContract.Items.AUTHOR, this.AUTHOR);
+        contentValues.put(ItemsContract.Items.THUMB_URL, this.THUMB_URL);
+        contentValues.put(ItemsContract.Items.PHOTO_URL, this.PHOTO_URL);
+        contentValues.put(ItemsContract.Items.ASPECT_RATIO, this.ASPECT_RATIO);
+        contentValues.put(ItemsContract.Items.BODY, this.BODY);
+        return contentValues;
     }
 
-    public void reduceBodyLength(){
-        this.BODY=this.BODY.substring(0, 150);
+    public void reduceBodyLength() {
+        this.BODY = this.BODY.substring(0, 500);
     }
 
 
@@ -178,4 +170,5 @@ public class Article implements Parcelable{
         dest.writeString(ASPECT_RATIO);
         dest.writeString(PUBLISHED_DATE);
     }
+
 }

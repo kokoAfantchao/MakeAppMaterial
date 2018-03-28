@@ -18,7 +18,6 @@ package com.example.xyzreader.data.source;
 
 import android.support.annotation.NonNull;
 
-
 import com.example.xyzreader.data.Article;
 
 import java.util.List;
@@ -33,6 +32,22 @@ import java.util.List;
  */
 public interface ArticlesDataSource {
 
+    void getArticles(@NonNull LoadArticlesCallback callback);
+
+    void getArticle(@NonNull String ArticleId, @NonNull GetArticleCallback callback);
+
+    void getArticleWithFullContent(@NonNull String ArticleId, @NonNull GetArticleCallback callback);
+
+    void saveArticle(@NonNull Article Article);
+
+    void saveArticle(@NonNull List<Article> articles);
+
+    void refreshArticles();
+
+    void deleteAllArticles();
+
+    void deleteArticle(@NonNull String ArticleId);
+
     interface LoadArticlesCallback {
 
         void onArticlesLoaded(List<Article> Articles);
@@ -46,17 +61,4 @@ public interface ArticlesDataSource {
 
         void onDataNotAvailable();
     }
-
-    void getArticles(@NonNull LoadArticlesCallback callback);
-
-    void getArticle(@NonNull String ArticleId, @NonNull GetArticleCallback callback);
-
-    void saveArticle(@NonNull Article Article);
-    void saveArticle(@NonNull List<Article> articles );
-
-    void refreshArticles();
-
-    void deleteAllArticles();
-
-    void deleteArticle(@NonNull String ArticleId);
 }

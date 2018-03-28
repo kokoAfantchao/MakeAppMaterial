@@ -4,26 +4,7 @@
             "outputFile": "/Users/nestor/Documents/GitHub/MakeAppMaterial/XYZReader/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/nestor/.gradle/caches/transforms-1/files-1.1/design-25.3.0.aar/d9accd11319c088bfc7b2ce034376f37/res/values-sw600dp-v13/values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,115,185,256,328,386,444,550,614,677",
-                        "endLines": "2,3,4,5,6,7,8,9,10,14",
-                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
-                        "endOffsets": "110,180,251,323,381,439,545,609,672,854"
-                    },
-                    "to": {
-                        "startLines": "10,11,12,13,14,15,16,17,28,29",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "611,671,741,812,884,942,1000,1106,1760,1823",
-                        "endLines": "10,11,12,13,14,15,16,17,28,32",
-                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
-                        "endOffsets": "666,736,807,879,937,995,1101,1165,1818,2000"
-                    }
-                },
-                {
-                    "source": "/Users/nestor/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/ab05a0f14f25c723afad7342ef68e5b8/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/nestor/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/3af4dc5f1eb6a7c280b7b73748427047/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -47,6 +28,25 @@
                         "startOffsets": "1170,1280,1335,1392,1458,1517",
                         "endColumns": "56,54,56,65,58,51",
                         "endOffsets": "1222,1330,1387,1453,1512,1564"
+                    }
+                },
+                {
+                    "source": "/Users/nestor/.gradle/caches/transforms-1/files-1.1/design-25.3.0.aar/a301518b5c78483147fde062107f47d0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,115,185,256,328,386,444,550,614,677",
+                        "endLines": "2,3,4,5,6,7,8,9,10,14",
+                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
+                        "endOffsets": "110,180,251,323,381,439,545,609,672,854"
+                    },
+                    "to": {
+                        "startLines": "10,11,12,13,14,15,16,17,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "611,671,741,812,884,942,1000,1106,1760,1823",
+                        "endLines": "10,11,12,13,14,15,16,17,28,32",
+                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
+                        "endOffsets": "666,736,807,879,937,995,1101,1165,1818,2000"
                     }
                 },
                 {

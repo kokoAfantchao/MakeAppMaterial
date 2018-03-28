@@ -11,9 +11,10 @@
     </style>
 
 
-     <style name="Theme.Article" parent="App.Base.Theme">
+    <style name="Theme.Article" parent="App.Base.Theme">
 
-     </style>
+
+    </style>
 
     <style name="Theme.Article.Detail" parent="App.Base.Theme">
 

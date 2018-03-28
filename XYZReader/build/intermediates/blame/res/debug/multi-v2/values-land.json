@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/nestor/Documents/GitHub/MakeAppMaterial/XYZReader/src/main/res/values-land/macro_layout.xml",
-                    "from": {
-                        "startLines": "3,2",
-                        "startColumns": "4,4",
-                        "startOffsets": "88,36",
-                        "endColumns": "57,51",
-                        "endOffsets": "141,83"
-                    },
-                    "to": {
-                        "startLines": "6,7",
-                        "startColumns": "4,4",
-                        "startOffsets": "328,386",
-                        "endColumns": "57,51",
-                        "endOffsets": "381,433"
-                    }
-                },
-                {
-                    "source": "/Users/nestor/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/ab05a0f14f25c723afad7342ef68e5b8/res/values-land/values-land.xml",
+                    "source": "/Users/nestor/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/3af4dc5f1eb6a7c280b7b73748427047/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -48,7 +31,7 @@
                     }
                 },
                 {
-                    "source": "/Users/nestor/.gradle/caches/transforms-1/files-1.1/design-25.3.0.aar/d9accd11319c088bfc7b2ce034376f37/res/values-land/values-land.xml",
+                    "source": "/Users/nestor/.gradle/caches/transforms-1/files-1.1/design-25.3.0.aar/a301518b5c78483147fde062107f47d0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -64,6 +47,23 @@
                         "endLines": "12",
                         "endColumns": "12",
                         "endOffsets": "662"
+                    }
+                },
+                {
+                    "source": "/Users/nestor/Documents/GitHub/MakeAppMaterial/XYZReader/src/main/res/values-land/macro_layout.xml",
+                    "from": {
+                        "startLines": "3,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "88,36",
+                        "endColumns": "57,51",
+                        "endOffsets": "141,83"
+                    },
+                    "to": {
+                        "startLines": "6,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "328,386",
+                        "endColumns": "57,51",
+                        "endOffsets": "381,433"
                     }
                 }
             ]

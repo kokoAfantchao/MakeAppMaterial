@@ -6,7 +6,6 @@ import com.example.xyzreader.data.Article;
 import com.example.xyzreader.data.source.ArticlesDataSource;
 import com.example.xyzreader.data.source.ArticlesRepository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,12 +16,12 @@ public class ArticlePresenter implements ArticleContract.Presenter {
 
     private final ArticlesRepository mArticlesRepository;
     private final ArticleContract.View mArticlsView;
-    private  boolean fistLoad = true;
+    private boolean fistLoad = true;
 
     public ArticlePresenter(@NonNull ArticlesRepository articlesRepository,
-                            @NonNull ArticleContract.View articlesView){
+                            @NonNull ArticleContract.View articlesView) {
         mArticlesRepository = articlesRepository;
-        mArticlsView= articlesView;
+        mArticlsView = articlesView;
     }
 
     @Override
@@ -37,11 +36,12 @@ public class ArticlePresenter implements ArticleContract.Presenter {
 
     @Override
     public void loadArticle(boolean forceUpdate) {
-        loadArticle(forceUpdate|| fistLoad, true);
-        fistLoad= false;
+        loadArticle(forceUpdate || fistLoad, true);
+        fistLoad = false;
 
     }
-    private void loadArticle(boolean forceUpdate, final boolean showLoadingUI)  {
+
+    private void loadArticle(boolean forceUpdate, final boolean showLoadingUI) {
         if (showLoadingUI) {
             mArticlsView.setLoadingIndicator(true);
         }
@@ -50,26 +50,25 @@ public class ArticlePresenter implements ArticleContract.Presenter {
         }
 
         mArticlesRepository.getArticles(new ArticlesDataSource.LoadArticlesCallback() {
-                @Override
-                public void onArticlesLoaded(List<Article> Articles) {
-                    if (!mArticlsView.isActive()) return;
+            @Override
+            public void onArticlesLoaded(List<Article> Articles) {
+                if (!mArticlsView.isActive()) return;
+                mArticlsView.showArticle(Articles);
 
-                      mArticlsView.showArticle(Articles);
+                if (showLoadingUI) mArticlsView.setLoadingIndicator(false);
 
-                    if (showLoadingUI) mArticlsView.setLoadingIndicator(false);
+            }
 
-                }
+            @Override
+            public void onDataNotAvailable() {
+                mArticlsView.showNoArticle();
 
-                @Override
-                public void onDataNotAvailable() {
-                    mArticlsView.showNoArticle();
-
-                }
-            });
+            }
+        });
 
         // The network request might be handled in a different thread so make sure Espresso knows
         // that the app is busy until the response is handled.
-       // EspressoIdlingResource.increment(); // App is busy until further notice
+        // EspressoIdlingResource.increment(); // App is busy until further notice
 
     }
 

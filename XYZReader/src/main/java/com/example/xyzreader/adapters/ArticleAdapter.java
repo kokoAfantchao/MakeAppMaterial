@@ -1,5 +1,6 @@
 package com.example.xyzreader.adapters;
 
+import android.graphics.Typeface;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -95,7 +96,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
             holder.thumbnailView.setTransitionName(mArticles.get(position).get_ID());
         }
         holder.authorView.setText(mArticles.get(position).getAUTHOR());
-        holder.subtitleView.setText(Html.fromHtml(mArticles.get(position).getBODY().toLowerCase()));
+        holder.subtitleView.setText(Html.fromHtml(mArticles.get(position).getBODY()));
 
     }
 
@@ -108,12 +109,16 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
 
     //Reload  new articles after refresh
     public void swapArticlesData(@NonNull List<Article> articles) {
-        mArticles = articles;
+        mArticles = new ArrayList<>(articles);
+        for (Article article : mArticles) {
+            article.reduceBodyLength();
+        }
+
         notifyDataSetChanged();
     }
 
     public interface ArticleItemListener {
-        void onArticleClick(@NonNull int position, @NonNull ImageView imageView );
+        void onArticleClick(@NonNull int position, @NonNull ImageView imageView);
 
     }
 
@@ -134,12 +139,22 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
             super(view);
             ButterKnife.bind(this, view);
             view.setOnClickListener(this);
+            setFonts(view);
         }
 
         public void loadImage(@NonNull String imageUrl) {
             Picasso.with(itemView.getContext()).load(imageUrl).into(thumbnailView);
 
         }
+        private void setFonts(View view ){
+            Typeface tf = Typeface.createFromAsset(view.getContext().getAssets(),
+                    "Rosario-Regular.ttf");
+           titleView.setTypeface(tf);
+           subtitleView.setTypeface(tf);
+           authorView.setTypeface(tf);
+           dateView.setTypeface(tf);
+
+         }
 
         @Override
         public void onClick(View view) {

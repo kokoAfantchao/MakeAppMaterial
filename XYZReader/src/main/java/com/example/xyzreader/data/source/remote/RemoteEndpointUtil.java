@@ -2,8 +2,6 @@ package com.example.xyzreader.data.source.remote;
 
 import android.util.Log;
 
-import com.example.xyzreader.data.source.remote.Config;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONTokener;
