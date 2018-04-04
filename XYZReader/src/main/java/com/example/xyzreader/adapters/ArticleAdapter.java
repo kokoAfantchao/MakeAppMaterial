@@ -96,7 +96,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
             holder.thumbnailView.setTransitionName(mArticles.get(position).get_ID());
         }
         holder.authorView.setText(mArticles.get(position).getAUTHOR());
-        holder.subtitleView.setText(Html.fromHtml(mArticles.get(position).getBODY()));
+        // holder.subtitleView.setText(Html.fromHtml(mArticles.get(position).getBODY()));
 
     }
 
@@ -128,8 +128,8 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
         ImageView thumbnailView;
         @BindView(R.id.article_title)
         TextView titleView;
-        @BindView(R.id.article_subtitle)
-        TextView subtitleView;
+        //        @BindView(R.id.article_subtitle)
+//        TextView subtitleView;
         @BindView(R.id.article_author)
         TextView authorView;
         @BindView(R.id.article_date)
@@ -146,15 +146,16 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
             Picasso.with(itemView.getContext()).load(imageUrl).into(thumbnailView);
 
         }
-        private void setFonts(View view ){
+
+        private void setFonts(View view) {
             Typeface tf = Typeface.createFromAsset(view.getContext().getAssets(),
                     "Rosario-Regular.ttf");
-           titleView.setTypeface(tf);
-           subtitleView.setTypeface(tf);
-           authorView.setTypeface(tf);
-           dateView.setTypeface(tf);
+            titleView.setTypeface(tf);
+            //subtitleView.setTypeface(tf);
+            authorView.setTypeface(tf);
+            dateView.setTypeface(tf);
 
-         }
+        }
 
         @Override
         public void onClick(View view) {

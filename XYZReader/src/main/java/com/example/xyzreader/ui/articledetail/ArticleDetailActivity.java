@@ -32,6 +32,7 @@ public class ArticleDetailActivity extends AppCompatActivity {
     View mUpButton;
     @BindView(R.id.up_container)
     View mUpButtonContainer;
+
     private int mStartId;
     private int mSelectedItemId;
     private int mSelectedItemUpButtonFloor = Integer.MAX_VALUE;

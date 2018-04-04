@@ -4,90 +4,71 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/spacing_micro"
+    android:layout_marginLeft="@dimen/spacing_micro"
+    android:layout_marginRight="@dimen/spacing_micro"
     android:layout_marginTop="@dimen/spacing_micro"
     android:clickable="true"
     android:focusable="true"
-    android:foreground="?selectableItemBackground">
+    android:foreground="?selectableItemBackground"
+    android:stateListAnimator="@animator/card_list_anim"
+    app:cardElevation="@dimen/spacing_xxmicro">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thumbnail_size"
+            android:background="@color/photo_placeholder"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/article_title"
             style="@style/TextAppearance.AppCompat.Subhead"
             android:layout_width="0dp"
             android:layout_height="32dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:ellipsize="end"
             android:maxLines="2"
             android:textColor="@color/primary_text"
             android:textSize="@dimen/text_size_normal"
-            app:layout_constraintEnd_toStartOf="@+id/thumbnail"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thumbnail"
             tools:text="Kolin in Action" />
-
-        <TextView
-            android:id="@+id/article_subtitle"
-            style="@style/TextAppearance.AppCompat.Body1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="4dp"
-            android:ellipsize="end"
-            android:maxLines="4"
-            android:textColor="@color/secondary_text"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/article_title"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/article_title"
-            tools:text="This is good book to learn kotlin" />
 
 
         <!--suppress AndroidLintContentDescription -->
-        <ImageView
-            android:id="@+id/thumbnail"
-            android:layout_width="@dimen/thumbnail_size"
-            android:layout_height="@dimen/thumbnail_size"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:background="@color/photo_placeholder"
-            android:scaleType="centerCrop"
-            app:layout_constraintBottom_toTopOf="@+id/article_date"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/article_title"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+
 
         <TextView
             android:id="@+id/article_author"
             android:layout_width="wrap_content"
-            android:layout_height="19dp"
-            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/accent"
+            android:textColor="@color/secondary_text"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/article_subtitle"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/article_title"
             tools:text="by Jake " />
 
         <TextView
             android:id="@+id/article_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/accent"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/secondary_text"
             app:layout_constraintBaseline_toBaselineOf="@+id/article_author"
-            app:layout_constraintEnd_toEndOf="@+id/thumbnail"
+            app:layout_constraintStart_toEndOf="@+id/article_author"
             tools:text="Jun 2017" />
 
 

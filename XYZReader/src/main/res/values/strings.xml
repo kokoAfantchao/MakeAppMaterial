@@ -10,5 +10,7 @@
     <string name="msg_loading">Loading...</string>
 
     <string name="transition_photo" translatable="false">transition_photo</string>
+    <string name="msg_no_connectvity">NO CONNECTIVITY..</string>
+    <string name="retry_string">RETRY</string>
 
 </resources>

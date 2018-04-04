@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -28,6 +29,7 @@ import com.example.xyzreader.data.source.ArticlesRepository;
 import com.example.xyzreader.data.source.local.ArticleLocalDataSoure;
 import com.example.xyzreader.data.source.remote.ArticleRemoteDataSource;
 import com.example.xyzreader.ui.articledetail.ArticleDetailActivity;
+import com.example.xyzreader.utils.AppConnectivity;
 import com.example.xyzreader.utils.AppExecutors;
 
 import java.util.ArrayList;
@@ -104,7 +106,8 @@ public class ArticleListActivity extends AppCompatActivity implements ArticleCon
             }
         });
         if (savedInstanceState == null) {
-            mArticlePresenter.start();
+            firstStart();
+
         } else {
             ArrayList<Article> parcelableArrayList = savedInstanceState
                     .getParcelableArrayList(BUNDLE_ARTICLE);
@@ -115,8 +118,20 @@ public class ArticleListActivity extends AppCompatActivity implements ArticleCon
 
     }
 
-    private void refresh() {
+    private void firstStart() {
+        if (AppConnectivity.isOnline(this)) {
 
+            mArticlePresenter.start();
+        } else {
+            Snackbar mySnackbar = Snackbar.make(findViewById(R.id.coordinator),
+                    R.string.msg_no_connectvity, Snackbar.LENGTH_INDEFINITE);
+            mySnackbar.setAction(R.string.retry_string, new MyUndoListener());
+            mySnackbar.show();
+        }
+    }
+
+    private void refresh() {
+        firstStart();
     }
 
     @Override
@@ -168,7 +183,6 @@ public class ArticleListActivity extends AppCompatActivity implements ArticleCon
 //        );
     }
 
-
     @Override
     public void setPresenter(ArticleContract.Presenter presenter) {
 
@@ -206,6 +220,15 @@ public class ArticleListActivity extends AppCompatActivity implements ArticleCon
     public boolean isActive() {
 
         return isAppVisible;
+    }
+
+    public class MyUndoListener implements View.OnClickListener {
+
+        @Override
+        public void onClick(View v) {
+            firstStart();
+
+        }
     }
 
 

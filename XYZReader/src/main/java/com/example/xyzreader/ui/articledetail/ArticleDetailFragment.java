@@ -5,14 +5,15 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ShareCompat;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.graphics.Palette;
+import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.text.format.DateUtils;
 import android.text.method.LinkMovementMethod;
@@ -32,9 +33,7 @@ import com.example.xyzreader.data.source.local.ArticleLocalDataSoure;
 import com.example.xyzreader.data.source.remote.ArticleRemoteDataSource;
 import com.example.xyzreader.ui.article.ArticleContract;
 import com.example.xyzreader.ui.article.ArticleListActivity;
-import com.example.xyzreader.ui.customviews.DrawInsetsFrameLayout;
 import com.example.xyzreader.ui.customviews.ImageLoaderHelper;
-import com.example.xyzreader.ui.customviews.ObservableScrollView;
 import com.example.xyzreader.utils.AppExecutors;
 
 import java.text.ParseException;
@@ -55,9 +54,9 @@ public class ArticleDetailFragment extends Fragment implements ArticleDetailCont
     private static final String ARG_ARTICLE = "article";
     private static final float PARALLAX_FACTOR = 1.25f;
     @BindView(R.id.scrollview)
-    ObservableScrollView mScrollView;
-    @BindView(R.id.draw_insets_frame_layout)
-    DrawInsetsFrameLayout mDrawInsetsFrameLayout;
+    NestedScrollView mScrollView;
+    //    @BindView(R.id.draw_insets_frame_layout)
+//    DrawInsetsFrameLayout mDrawInsetsFrameLayout;
     @BindView(R.id.photo_container)
     View mPhotoContainerView;
     @BindView(R.id.photo)
@@ -70,6 +69,8 @@ public class ArticleDetailFragment extends Fragment implements ArticleDetailCont
     TextView bylineView;
     @BindView(R.id.article_body)
     TextView bodyView;
+    @BindView(R.id.toolbar_detail)
+    Toolbar toolbar;
     private Cursor mCursor;
     private long mItemId;
     private Article article;
@@ -79,8 +80,8 @@ public class ArticleDetailFragment extends Fragment implements ArticleDetailCont
     private ColorDrawable mStatusBarColorDrawable;
     private int mTopInset;
     private int mScrollY;
-    private boolean mIsCard = false;
     private int mStatusBarFullOpacityBottom;
+    private boolean mIsCard = false;
 
 
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.sss");
@@ -151,27 +152,31 @@ public class ArticleDetailFragment extends Fragment implements ArticleDetailCont
                              Bundle savedInstanceState) {
         mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
         ButterKnife.bind(this, mRootView);
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             mPhotoView.setTransitionName(article.get_ID());
         }
+        getActivityCast().setSupportActionBar(toolbar);
 
-        mDrawInsetsFrameLayout.setOnInsetsCallback(new DrawInsetsFrameLayout.OnInsetsCallback() {
+//        mDrawInsetsFrameLayout.setOnInsetsCallback(new DrawInsetsFrameLayout.OnInsetsCallback() {
+//            @Override
+//            public void onInsetsChanged(Rect insets) {
+//                mTopInset = insets.top;
+//            }
+//        });
+
+        mScrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
             @Override
-            public void onInsetsChanged(Rect insets) {
-                mTopInset = insets.top;
+            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+                if (scrollY > oldScrollX) {
+//                    mScrollY = mScrollView.getScrollY();
+//                    getActivityCast().onUpButtonFloorChanged(mItemId, ArticleDetailFragment.this);
+//                    mPhotoContainerView.setTranslationY((int) (mScrollY - mScrollY / PARALLAX_FACTOR));
+//                    updateStatusBar();
+
+                }
             }
         });
-
-        mScrollView.setCallbacks(new ObservableScrollView.Callbacks() {
-            @Override
-            public void onScrollChanged() {
-                mScrollY = mScrollView.getScrollY();
-                getActivityCast().onUpButtonFloorChanged(mItemId, ArticleDetailFragment.this);
-                mPhotoContainerView.setTranslationY((int) (mScrollY - mScrollY / PARALLAX_FACTOR));
-                updateStatusBar();
-            }
-        });
-
 
         mStatusBarColorDrawable = new ColorDrawable(0);
 
@@ -202,7 +207,7 @@ public class ArticleDetailFragment extends Fragment implements ArticleDetailCont
                     (int) (Color.blue(mMutedColor) * 0.9));
         }
         mStatusBarColorDrawable.setColor(color);
-        mDrawInsetsFrameLayout.setInsetBackground(mStatusBarColorDrawable);
+        // mDrawInsetsFrameLayout.setInsetBackground(mStatusBarColorDrawable);
     }
 
     private Date parsePublishedDate() {
@@ -259,8 +264,6 @@ public class ArticleDetailFragment extends Fragment implements ArticleDetailCont
                             Palette p = Palette.generate(bitmap, 12);
                             mMutedColor = p.getDarkMutedColor(0xFF333333);
                             mPhotoView.setImageBitmap(imageContainer.getBitmap());
-                            mRootView.findViewById(R.id.meta_bar)
-                                    .setBackgroundColor(mMutedColor);
                             updateStatusBar();
                         }
                     }
@@ -283,6 +286,7 @@ public class ArticleDetailFragment extends Fragment implements ArticleDetailCont
         return mIsCard
                 ? (int) mPhotoContainerView.getTranslationY() + mPhotoView.getHeight() - mScrollY
                 : mPhotoView.getHeight() - mScrollY;
+
     }
 
     @Override
